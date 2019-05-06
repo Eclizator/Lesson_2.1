@@ -4,24 +4,47 @@
 #include <stdio.h>
 
 
+int print_chars_and_return_sum (int a, int b, int c){
+    if ( a < 32 || b < 32 || a > 126 || b > 126 || c > 30){
+        return -1;
+    }
 
-int main (){
+    char outer = (char) a;
+    char inner = (char) b;
+    
     int i = 0;
     int j = 0;
-    
-    int n = 5;
 
- while (i <= n){
+ while (i <= c){
      j = 0;
-     while( j <= n){
-        if( (i==j)|| ( i+j ) == n + 1)
-            write(1,"*",1);
-        else 
+     
+     while( j <= c){
+        
+        if(  (i==j) || ( i+j ) == c){
+
+            write(1,&outer,1);
+        }
+        
+        else if (  j == 0 || i == c  ||  j == c || i == 0 ){
+            write(1,&inner,1);
+        }
+        else {
+            
             write(1," ",1);
+        }
+        
         j++;
      }
      write(1,"\n",1);
      i++;
  }
- 
+ return c;
+ }
+
+int main(){
+
+
+std::cout << print_chars_and_return_sum (96, 69, 31) << std::endl;
+
+std::cout << print_chars_and_return_sum (66, 33, 14) << std::endl;
 }
