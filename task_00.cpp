@@ -41,10 +41,3 @@ int print_chars_and_return_sum (int a, int b, int c){
  return c;
  }
 
-int main(){
-
-
-std::cout << print_chars_and_return_sum (96, 69, 31) << std::endl;
-
-std::cout << print_chars_and_return_sum (66, 33, 14) << std::endl;
-}

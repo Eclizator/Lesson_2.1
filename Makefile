@@ -12,7 +12,7 @@ EOC ="\033[0;0m"
 RESET = "\x1b[0m"
 #==================
 
-SRC = index.cpp
+SRC = task_00.cpp
 BINARY = build.out
 
 all:
