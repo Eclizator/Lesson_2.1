@@ -30,7 +30,7 @@ int print_chars_and_return_sum (int a, int b, int c){
         }
         else {
             
-            write(1," ",1);
+            write(1,"_",1);
         }
         
         j++;
@@ -38,6 +38,7 @@ int print_chars_and_return_sum (int a, int b, int c){
      write(1,"\n",1);
      i++;
  }
- return c;
+ return c*2;
  }
+
 

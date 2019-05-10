@@ -13,7 +13,7 @@ RESET = "\x1b[0m"
 #==================
 
 SRC = task_00.cpp
-BINARY = build.out
+BINARY = a.out
 
 all:
 	@echo $(CYAN)"Start compilation"
